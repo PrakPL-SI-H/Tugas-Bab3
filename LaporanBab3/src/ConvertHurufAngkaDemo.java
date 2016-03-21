@@ -5,6 +5,7 @@ public class ConvertHurufAngkaDemo {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
+        Scanner input = new Scanner (System.in);
 
         ConvertHurufAngka ang = new ConvertHurufAngka();
         ConvertHurufAngka hur = new ConvertHurufAngka();
@@ -13,7 +14,7 @@ public class ConvertHurufAngkaDemo {
         System.out.println("Hasil Convert : ");
         ang.OverloadingMeth(angka);
         System.out.println("Masukkan huruf : ");
-        String huruf = in.nextLine();
+        String huruf = input.nextLine();
         hur.OverloadingMeth(huruf);
     }
 

@@ -35,7 +35,7 @@ public class ConvertHurufAngka {
             jumlah[0] = 100;
         } else {System.out.println("inputan salah");}
             
-            
+            System.out.println("Hasil convert : "+jumlah[0]);
        }
         
        
