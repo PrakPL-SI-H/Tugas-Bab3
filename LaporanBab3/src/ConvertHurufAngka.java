@@ -101,12 +101,8 @@ public class ConvertHurufAngka {
             } else {
                 System.out.println("Inputan salah");
             }
-        }
-            
-            
+        }    
        }
-        
-       
         public void OverloadingMeth(int angka) {
         String angkahuruf[] = new String[]{"Nol", "Satu", "Dua", "Tiga", "Empat", "Lima", "Enam", "Tujuh", "Delapan", "Sembilan", "Sepuluh", "Sebelas"};
         if (angka <= 11 && angka >= 0) {
