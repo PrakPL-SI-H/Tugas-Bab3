@@ -30,6 +30,31 @@
     public void setAlamat(String a) {
         alamat = a;
     }
+    
+     public int pilihObat(String a) {
+        obat = a;
+        if (obat.equals("BODREX")) {
+            harga += 10000;
+        } else if (obat.equals("PARACETAMOL")) {
+            harga += 20000;
+        } else if (obat.equals("KONIDIN")) {
+            harga += 30000;
+        } else if (obat.equals("PONSTAN")) {
+            harga += 40000;
+        } else if (obat.equals("OSKADON")) {
+            harga += 50000;
+        } else {
+            System.out.println("Obat tidak tersedia");
+        }
+        return harga;
+    }
+
+    public void Data() {
+        System.out.println("==========DATA PEMBELIAN==========");
+        System.out.println("Nama Anda                       : " + nama);
+        System.out.println("Alamat Anda                     : " + alamat);
+        System.out.println("Harga Yang Harus Dibayar        : " + harga);
+    }
 
 
 public class LatihanBab1 {
