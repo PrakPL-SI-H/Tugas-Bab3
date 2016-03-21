@@ -33,9 +33,77 @@ public class ConvertHurufAngka {
             jumlah[0] = 11;
         } else if (arrayHuruf[0].equals("seratus")) {
             jumlah[0] = 100;
-        } else {System.out.println("inputan salah");}
+        } else {
+            jumlah[0] = 0;
+        }
+        
+        if (arrayHuruf.length == 3) {
+            if (arrayHuruf[2].equals("satu")) {
+                jumlah[1] = 1;
+            } else if (arrayHuruf[2].equals("dua")) {
+                jumlah[1] = 2;
+            } else if (arrayHuruf[2].equals("tiga")) {
+                jumlah[1] = 3;
+            } else if (arrayHuruf[2].equals("empat")) {
+                jumlah[1] = 4;
+            } else if (arrayHuruf[2].equals("lima")) {
+                jumlah[1] = 5;
+            } else if (arrayHuruf[2].equals("enam")) {
+                jumlah[1] = 6;
+            } else if (arrayHuruf[2].equals("tujuh")) {
+                jumlah[1] = 7;
+            } else if (arrayHuruf[2].equals("delapan")) {
+                jumlah[1] = 8;
+            } else if (arrayHuruf[2].equals("sembilan")) {
+                jumlah[1] = 9;
+            } else if (jumlah[0] == 0) {
+                System.out.println("Inputan salah");
+            } else {
+                jumlah[1] = 0;
+            }
+        }
+        if (arrayHuruf.length == 1) {
+            if (jumlah[0] == 0) {
+                System.out.println("Inputan salah");
+            } else if (jumlah[0] == 69) {
+                System.out.println("Hasil Convert\t: " + 0);
+            } else {
+                System.out.println("Hasil Convert\t: " + jumlah[0]);
+            }
+        }
+        if (arrayHuruf.length == 2) {
+            if (arrayHuruf[1].equals("belas")) {
+                if (jumlah[0] == 0) {
+                    System.out.println("Inputan Salah");
+                } else {
+                    jumlah[2] = jumlah[0] + 10;
+                    System.out.println("Hasil Convert\t: " + jumlah[2]);
+                }
+            } else if (arrayHuruf[1].equals("puluh")) {
+                if (jumlah[0] == 0) {
+                    System.out.println("Inputan Salah");
+                } else {
+                    jumlah[2] = jumlah[0] * 10;
+                    System.out.println("Hasil Convert\t: " + jumlah[2]);
+                }
+            } else {
+                System.out.println("Inputan salah");
+            }
+        }
+        if (arrayHuruf.length == 3) {
+            if (arrayHuruf[1].equals("puluh")) {
+                jumlah[3] = (jumlah[0] * 10) + jumlah[1];
+                if (jumlah[1] == 0 || jumlah[0] == 0) {
+                    System.out.println("Inputan salah");
+                } else {
+                    System.out.println("Hasil Convert\t= " + jumlah[3]);
+                }
+            } else {
+                System.out.println("Inputan salah");
+            }
+        }
             
-            System.out.println("Hasil convert : "+jumlah[0]);
+            
        }
         
        
