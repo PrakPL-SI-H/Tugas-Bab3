@@ -22,6 +22,10 @@ public class ApotekDemo {
             banyak = in.nextInt();
             System.out.println("");
             Pembeli obat = new Pembeli (pilihan,banyak);
+            System.out.println("Apakah anda akan membeli obat lagi?");
+            System.out.println("1. Ya");
+            System.out.println("2. Tidak");
+            System.out.println("Pilihan anda : ");
             pil = in.nextInt();
         
         }while(pil != 2);
