@@ -22,4 +22,18 @@ public class GantiAngka {
             System.out.println("Input Maksimaladalah 100");
         }
     }
+
+    public static void overloadingMeth(String a) {
+        for (int i = 0; i < Bil.length; i++) {
+            if (Bil[i] == a) {
+                System.out.println(Angka[i]);
+            }
+        }
+        if (a == "nol") {
+            System.out.println(0);
+        }
+        if (a == "seratus") {
+            System.out.println(100);
+        }
+    }
 }
