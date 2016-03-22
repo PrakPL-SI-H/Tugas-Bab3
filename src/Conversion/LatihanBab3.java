@@ -1,4 +1,4 @@
-package Praktikum3;
+package Conversion;
 
 import java.util.Scanner;
 

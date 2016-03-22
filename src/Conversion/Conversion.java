@@ -1,4 +1,4 @@
-package Praktikum3;
+package Conversion;
 
 public class Conversion {
 
