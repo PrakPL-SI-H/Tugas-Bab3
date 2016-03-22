@@ -5,7 +5,7 @@ public class Conversion {
     private String words[] = {"", "Satu", "Dua", "Tiga", "Empat", "Lima", "Enam",
         "Tujuh", "Delapan", "Sembilan", "Sepuluh", "Sebelas", "Seratus", "Nol"};
 
-    public void number2Words(int num) {
+        public void overloadingMeth(int num) {
         if (num == 0) {
             System.out.println("In words        : " + words[13]);
         } else if (num <= 11) {
@@ -21,7 +21,7 @@ public class Conversion {
         }
     }
 
-    public void words2Number(String words) {
+    public void overloadingMeth(String words) {
         for (int i = 0; i < this.words.length; i++) {
             if (words.equalsIgnoreCase(this.words[12])) {
                 System.out.println("In number       : " + 100);

@@ -23,13 +23,13 @@ public class LatihanBab3 {
                 case 1:
                     System.out.println(line);
                     System.out.print("Enter number[0 - 100]         : ");
-                    number.number2Words(in.nextInt());
+                    number.overloadingMeth(in.nextInt());
                     break;
                 case 2:
                     System.out.println(line);
                     String use = in.nextLine();
                     System.out.print("Enter words[Nol s/d Seratus]  : ");
-                    number.words2Number(in.nextLine());
+                    number.overloadingMeth(in.nextLine());
                     break;
                 
                 
