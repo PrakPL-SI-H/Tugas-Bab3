@@ -74,8 +74,12 @@ public class Pembeli {
     
     }
     public void showLast (){
-        System.out.println("Nama : "+Pembeli.nama);
-        System.out.println("Alamat : "+Pembeli.alamat);
-        System.out.println("Total yang harus dibayar : "+Obat.total);
+        System.out.println("\n=====================================================");
+        System.out.println("\t\tAPOTEK FORZA ");
+        System.out.println("=====================================================\n");
+        System.out.println("Nama\t: "+Pembeli.nama);
+        System.out.println("Alamat\t: "+Pembeli.alamat);
+        System.out.println("Total yang harus anda bayar sebanyak : Rp. "+Obat.total);
+         System.out.println("Terimakasih atas transaksi anda, silahkan datang kembali.");
     }
 }

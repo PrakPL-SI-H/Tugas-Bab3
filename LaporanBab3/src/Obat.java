@@ -5,7 +5,7 @@ public class Obat {
     
      public void displayMessage() {
         System.out.println("=====================================================");
-        System.out.println("\t DAFTAR OBAT DAN HARGA APOTIK FORZA");
+        System.out.println("\t DAFTAR OBAT DAN HARGA APOTEK FORZA");
         System.out.println("=====================================================");
         System.out.printf("|%-5s |%-30s |%-10s | \n", "No", "Nama Obat", "Harga");
         System.out.println("=====================================================");
