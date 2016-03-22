@@ -2,7 +2,7 @@ package Praktikum3;
 
 public class Conversion {
 
-    String words[] = {"", "Satu", "Dua", "Tiga", "Empat", "Lima", "Enam",
+    private String words[] = {"", "Satu", "Dua", "Tiga", "Empat", "Lima", "Enam",
         "Tujuh", "Delapan", "Sembilan", "Sepuluh", "Sebelas", "Seratus", "Nol"};
 
     public void words2Number(String words) {
