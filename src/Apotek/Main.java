@@ -48,7 +48,7 @@ public class Main {
 
         System.out.println(line);
         for (int i = 0; i < 5; i++) {
-            System.out.print("Item Code  " + (i + 1) + "         = ");
+            System.out.print("DRUG NAME  " + (i + 1) + "         = ");
             inputObat[i] = in.next();
             System.out.print("Qty        " + (i + 1) + "         = ");
             jumlah[i] = in.nextInt();

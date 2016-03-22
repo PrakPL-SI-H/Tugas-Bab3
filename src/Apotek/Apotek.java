@@ -4,9 +4,9 @@ public class Apotek {
 
     private String nama;
     private String alamat;
-    private String[] obat = {"Panadol", "Vitamin", "Amoxylin", "Paramex", "Milanta", "Diapet"};
-    private int[] jumlah = new int[20];
-    private int[] harga = {90000, 50000, 30000, 90000, 50000, 30000};
+    private String[] obat;
+    private int[] jumlah;
+    private int[] harga;
     private String line = "========================================";
 
     public Apotek(String nama, String alamat) {
@@ -21,7 +21,7 @@ public class Apotek {
 
     public void daftarHarga() {
         System.out.println(line);
-        System.out.println("tNama Obat \t\t PRICE");
+        System.out.println("\t DRUG \t\t PRICE");
         for (int i = 0; i < obat.length; i++) {
             System.out.printf("\t%10s \t %d\n", obat[i], harga[i]);
         }
@@ -33,7 +33,7 @@ public class Apotek {
         int l = 0;
         int TOTAL = 0;
         System.out.println(line);
-        System.out.println("\tObat \t\t QTY \t PRICE \t TOTAL");
+        System.out.println("\t DRUG \t\t QTY \t PRICE \t TOTAL");
         for (i = 0; i < obat.length; i++, l++) {
             if (jumlah[i] == 0) {
                 continue;
