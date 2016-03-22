@@ -1,3 +1,4 @@
+import java.util.Scanner;
 class Konversi{
     String bilangan[] = {"","Satu","Dua","Tiga","Empat","Lima","Enam","Tujuh",
                     "Delapan","Sembilan","Sepuluh","Sebelas","Seratus","nol"};
@@ -46,9 +47,11 @@ class Konversi{
 }
 public class LatihanBab3 {
     public static void main(String[] args) {
-        System.out.println("tess");
-        
-        
-    }
-    
+        Scanner input = new Scanner(System.in);
+        Konversi Konv = new Konversi();
+            System.out.println("Konversi String to Int (Range 0-100): ");
+                 Konv.OverloadingMeth(input.nextLine());
+            System.out.println("Konversi int to String (Range 0-100): ");
+                 Konv.OverloadingMeth(input.nextInt());
+    }    
 }
