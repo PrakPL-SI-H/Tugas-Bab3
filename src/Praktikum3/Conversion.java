@@ -5,26 +5,6 @@ public class Conversion {
     private String words[] = {"", "Satu", "Dua", "Tiga", "Empat", "Lima", "Enam",
         "Tujuh", "Delapan", "Sembilan", "Sepuluh", "Sebelas", "Seratus", "Nol"};
 
-    public void words2Number(String words) {
-        for (int i = 0; i < this.words.length; i++) {
-            if (words.equalsIgnoreCase(this.words[12])) {
-                System.out.println("In number       : " + 100);
-                break;
-            } else if (words.equalsIgnoreCase(this.words[i])) {
-                System.out.println("In number       : " + i);
-            } else if (words.equalsIgnoreCase(this.words[i] + " Belas")) {
-                System.out.println("In number       : " + (i + 10));
-            } else if (words.equalsIgnoreCase(this.words[i] + " Puluh")) {
-                System.out.println("In number       : " + (i * 10));
-            }
-            for (int j = 0; j < this.words.length; j++) {
-                if (words.equalsIgnoreCase(this.words[i] + " Puluh " + this.words[j])) {
-                    System.out.println("In number       : " + (i) + (j));
-                } 
-            } 
-        }
-    }
-    
     public void number2Words(int num) {
         if (num == 0) {
             System.out.println("In words        : " + words[13]);
@@ -41,5 +21,23 @@ public class Conversion {
         }
     }
 
-    
+    public void words2Number(String words) {
+        for (int i = 0; i < this.words.length; i++) {
+            if (words.equalsIgnoreCase(this.words[12])) {
+                System.out.println("In number       : " + 100);
+                break;
+            } else if (words.equalsIgnoreCase(this.words[i])) {
+                System.out.println("In number       : " + i);
+            } else if (words.equalsIgnoreCase(this.words[i] + " Belas")) {
+                System.out.println("In number       : " + (i + 10));
+            } else if (words.equalsIgnoreCase(this.words[i] + " Puluh")) {
+                System.out.println("In number       : " + (i * 10));
+            }
+            for (int j = 0; j < this.words.length; j++) {
+                if (words.equalsIgnoreCase(this.words[i] + " Puluh " + this.words[j])) {
+                    System.out.println("In number       : " + (i) + (j));
+                }
+            }
+        }
+    }
 }
