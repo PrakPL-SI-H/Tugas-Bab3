@@ -27,6 +27,9 @@ public class ApotekDemo {
             System.out.println("2. Tidak");
             System.out.println("Pilihan anda : ");
             pil = in.nextInt();
+            if (pil == 2){
+                obat.showLast();
+            }
         
         }while(pil != 2);
 }

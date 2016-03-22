@@ -1,7 +1,7 @@
 
 public class Pembeli {
-    public String nama;
-    public String alamat;
+    public static String nama;
+    public static String alamat;
     public static double banyakConvert;
     public static int jumlahConvert;
     
@@ -72,5 +72,10 @@ public class Pembeli {
                System.out.println("Pilihan yang anda masukkan salah, silahkan coba lagi");
        }
     
+    }
+    public void showLast (){
+        System.out.println("Nama : "+Pembeli.nama);
+        System.out.println("Alamat : "+Pembeli.alamat);
+        System.out.println("Total yang harus dibayar : "+Obat.total);
     }
 }
