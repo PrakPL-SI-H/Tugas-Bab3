@@ -22,4 +22,37 @@ public class Apotek {
             d = d1;
             e = e1;
         }
+
+        public static void getDaftarObat() {
+            System.out.println("==========DaftarObat===========");
+            System.out.println("1. ObatSakitKepala   : " + a);
+            System.out.println("2. ObatSakitPerut    : " + b);
+            System.out.println("3. Paracetamol         : " + c);
+            System.out.println("4. Obat Influenza      : " + d);
+            System.out.println("5. ObatMagh           : " + e);
+        }
+
+        public void pilihObat(int pilih) {
+            int harga;
+            switch (pilih) {
+                case 1:
+                    harga = a;
+                    break;
+                case 2:
+                    harga = b;
+                    break;
+                case 3:
+                    harga = c;
+                    break;
+                case 4:
+                    harga = d;
+                    break;
+                case 5:
+                    harga = e;
+                    break;
+                default:
+                    harga = 0;
+                    break;
+            }
+
     }
