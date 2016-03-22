@@ -36,4 +36,35 @@ public class GantiAngka {
             System.out.println(100);
         }
     }
+
+    public static void overloadingMeth(String a, String b) {
+        if (b == "belas") {
+            System.out.print(1);
+            for (int i = 0; i < Bil.length; i++) {
+                if (Bil[i] == a) {
+                    System.out.println(Angka[i]);
+                }
+            }
+        } else if (b == "puluh") {
+            for (int i = 0; i < Bil.length; i++) {
+                if (Bil[i] == a) {
+                    System.out.print(Angka[i]);
+                }
+            }
+            System.out.println(0);
+        }
+    }
+
+    public static void overloadingMeth(String a, String b, String c) {
+        for (int i = 0; i < Bil.length; i++) {
+            if (Bil[i] == a) {
+                System.out.print(Angka[i]);
+            }
+        }
+        for (int i = 0; i < Bil.length; i++) {
+            if (Bil[i] == c) {
+                System.out.println(Angka[i]);
+            }
+        }
+    }
 }
