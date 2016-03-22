@@ -54,5 +54,18 @@ public class Apotek {
                     harga = 0;
                     break;
             }
+            Total(harga);
+        }
+
+        private void Total(int harga) {
+            total = total + harga;
+        }
+
+        public void getTotal() {
+            System.out.println("===========TOTAL BIAYA===========");
+            System.out.println("Nama   : " + nama);
+            System.out.println("Alamat : " + alamat);
+            System.out.println("Total biayaobat yang harus anda bayar sebesar Rp. " + total +",00");
+        }
 
     }
