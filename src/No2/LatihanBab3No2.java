@@ -3,15 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package No2;
+
 /**
  *
  * @author irwin deriyan
  */
-public class LatihanBab1 {
+public class LatihanBab3No2 {
+
+    /**
+     * @param args the command line arguments
+     */
     public static void main(String[] args) {
-        System.out.println("tess");
-        
-        
+        // TODO code application logic here
     }
     
 }
