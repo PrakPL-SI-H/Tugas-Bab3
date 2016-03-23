@@ -21,9 +21,18 @@ class Apotek {
          System.out.print(obat[i]+"  "+harga[i]);
      }
      public void daftarObat(String pilih, int jumlah){
-         
-             
-         
+         for (int i = 0; i < obat.length; i++) {
+             if (pilih.equalsIgnoreCase(obat[i])){
+                beliObat = pilih;
+                this.jumlah = jumlah;
+                hargaTotal = harga[i]*jumlah;
+            }
+            else{
+               System.out.println("Obat Tidak Di temukan");
+            }
+            break;
+         }
+        
      }
      
 }
@@ -61,7 +70,13 @@ public class TugasBab3 {
                     }
                     break;
                 case 2:
-                    
+                    System.out.println("=====Pilihan Obat=====");
+                    System.out.print("Masukkan Obat   : ");
+                    String pilih = in.next();
+                    System.out.print("Masukkan Jumlah : ");
+                    int jumlah = in.nextInt();
+                    obat.daftarObat(pilih, jumlah);  
+                    break;     
             }
     }
     
