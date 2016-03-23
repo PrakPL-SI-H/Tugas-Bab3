@@ -1,14 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package mainapotek;
 
-/**
- *
- * @author ASUS-A455L
- */
+import java.util.Scanner;
+
 public class DataApotek {
+    private String nama, alamat;
+    Apotek [] obat = new Apotek [6];
+    private int no=0,DH=0;
+    Scanner s = new Scanner(System.in);
+    
     
 }
