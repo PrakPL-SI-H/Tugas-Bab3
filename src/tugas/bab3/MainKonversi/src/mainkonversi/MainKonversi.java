@@ -38,5 +38,16 @@ public class MainKonversi {
         }            
     }
     
+    public static String angkaKonversi(Long angka){
+    if (angka<12){
+        return angkabilangan[angka.intValue()];}
+    if (angka>=12 && angka <= 19){
+        return angkabilangan[angka.intValue()%10]+"belas";}
+    if (angka>=20 && angka <= 99){
+        return angkaKonversi(angka/10)+"puluh"+ angkabilangan[angka.intValue()%10];}
+    if (angka==100){
+        return "seratus";}
+    return "";
+    }
     
 }
