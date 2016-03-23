@@ -7,7 +7,7 @@ public class ClassBilangan {
 
     public String rubah(int b) {
         String a[] = {"", "satu", "dua", "tiga", "empat", "lima", "enam", "tujuh", "delapan", "sembilan", "sepuluh", "sebelas"};
-        String huruf = null;
+        String huruf;
         if (b < 12) {
             huruf = ("" + a[b]);
         } else if (b < 20) {
