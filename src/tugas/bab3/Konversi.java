@@ -1,6 +1,12 @@
-class  Konversi{	
-	String angka(int satuan){
-		String []huruf ={" ","Satu","Dua","Tiga","Empat","Lima","Enam","Tujuh","Delapan","Sebilan","Sepuluh","Sebelas"};
+class  Konversi{
+    private final String[] angka = {"","0","1","2","3","4","5","6","7","8","9","10","11"};
+    private String nilaiAngka;
+    private final String[] huruf = {"","Satu","Dua","Tiga","Empat","Lima","Enam","Tujuh","Delapan","Sebilan","Sepuluh","Sebelas"};
+    private String nilaiHuruf;
+    public String getHasilAngka() {
+        return nilaiAngka;
+    }
+    public String angka(int satuan){
 		String hasil="";
 		if(satuan<12)
 			hasil=hasil+huruf[satuan];
@@ -22,4 +28,9 @@ class  Konversi{
 			hasil="Angka terlalu besar, harus kurang dari 1 milyar!";
 		return hasil;
 }
+
+
+    public String getHasilHuruf() {
+        return nilaiHuruf;
+    }
 }
