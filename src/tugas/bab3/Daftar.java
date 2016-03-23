@@ -28,5 +28,53 @@ public void menu(){
     public String Nama(){
     return Alamat;
 }
+public void pilihan(int pilih){
+    if ( pilih == 1){
+        System.out.println("Obat yang dibeli = Obat Sakit Kepala");
+        System.out.println("Berapa Obat yang dibeli =");
+        tmb = in.nextInt();
+        jumlah = 5000 * tmb;
+        total = harga ;
+        total++ ;
+    }else if (pilih == 2){
+        System.out.println("Obat yang dibeli = Obat Sakit Gigi");
+        System.out.println("Berapa Obat yang dibeli =");
+        tmb = in.nextInt();
+        jumlah = 6000 * tmb;
+        total = harga ;
+        total++ ;
+    }else if (pilih == 3){
+        System.out.println("Obat yang dibeli = Obat Sakit Flu");
+        System.out.println("Berapa Obat yang dibeli =");
+        tmb = in.nextInt();
+        jumlah = 7000 * tmb;
+        jumlah = total;
+        total++ ;
+        }else if (pilih == 4){
+        System.out.println("Obat yang dibeli = Obat Sakit Panas");
+        System.out.println("Berapa Obat yang dibeli =");
+        tmb = in.nextInt();
+        jumlah = 6500 * tmb;
+        total = harga ;
+        total++ ;
+        }else if (pilih == 5){
+        System.out.println("Obat yang dibeli = Obat Sakit Pusing");
+        System.out.println("Berapa Obat yang dibeli =");
+        tmb = in.nextInt();
+        jumlah = 5000 * tmb;
+        total = harga ;
+        total++ ;
+        }else if (pilih == 6){
+        System.out.println("Obat yang dibeli = Obat Sakit Linu");
+        System.out.println("Berapa Obat yang dibeli =");
+        tmb = in.nextInt();
+        jumlah = 10000 * tmb;
+        total = harga ;
+        total++ ;
+        }else{
+        System.out.println("Yang anda pilih tidak tersedia !!!");
+        }
+} 
 
 }
+
