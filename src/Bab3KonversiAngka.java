@@ -12,7 +12,7 @@ public class Bab3KonversiAngka {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        ProsesKonversi convert = new ProsesKonversi();
+        ProsesKonversi convert = new ProsesKonversi(); //deklarasi objek baru
         String loop;
         int pil;
         tampilanMenu();
@@ -24,7 +24,7 @@ public class Bab3KonversiAngka {
                 case 1:
                     System.out.print("Masukkan huruf anda    : ");
                     in.nextLine();
-                    convert.overLoadingMeth(in.nextLine());
+                    convert.overLoadingMeth(in.nextLine()); //pemanggilan overloadingMeth oleh objek
                     convert.outputnum();
                     break;
 
@@ -32,20 +32,20 @@ public class Bab3KonversiAngka {
 
                     System.out.print("Masukkan angka anda    : ");
                     int num = in.nextInt();
-                    convert.overloadingMeth(num);
+                    convert.overloadingMeth(num); //pemanggilan overloadingMeth oleh objek
                     convert.outputword();
                     break;
 
             }
-            System.out.print("ULANGI LAGI ?(Y/N)");
+            System.out.print("ULANGI LAGI ?(Y/N)"); 
             loop = in.next();
-        } while ("Y".equals(loop));
+        } while ("Y".equals(loop));//logika perulangan
         System.out.println("");
         System.out.println("     ===PROGRAM CLOSED===");
         System.out.println("         TERIMA KASIH    ");
     }
 
-    public static void tampilanMenu() {
+    public static void tampilanMenu() { //menu awalan
         System.out.println("===PROGRAM KONVERSI ANGKA & HURUF===");
         System.out.println("                MENU                ");
         System.out.println("                                    ");
