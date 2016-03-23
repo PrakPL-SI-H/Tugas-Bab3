@@ -33,3 +33,17 @@ public class MainApotek {
         System.out.println("12. Rhinos            : Rp 30.000,-");
         System.out.println("=====================================================");
         System.out.println("Pilih Obat            : ");
+        code = new int[jumlah];
+        data = new int[jumlah];
+        for (int i = 0; i < code.length; i++) {
+            System.out.print("Masukkan Kode Obat    : ");
+            code[i] = in.nextInt();
+            System.out.print("Masukkan Jumlah Obat  : ");
+            data[i] = in.nextInt();
+            apotek b = new apotek(code[i], data[i]);
+        }
+        x.tampilkan();
+        System.out.println("========= TERIMA KASIH ATAS KUNJUNGAN ANDA ==========");
+    }
+
+}
