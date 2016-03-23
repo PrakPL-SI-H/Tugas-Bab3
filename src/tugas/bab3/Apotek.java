@@ -40,8 +40,4 @@ public class Apotek {
             jumlahObat2 = jumlah*10000;
             System.out.println("Harganya : "+jumlahObat2);
         }
-        public void jumlahObat(int a){
-            int Total = jumlahObat1+jumlahObat2+jumlahObat3+jumlahObat4+jumlahObat5;
-            System.out.println("Total Harga : "+Total);
-        }
 }
