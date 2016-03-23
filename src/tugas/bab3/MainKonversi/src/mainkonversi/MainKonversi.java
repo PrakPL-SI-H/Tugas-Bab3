@@ -26,8 +26,17 @@ public class MainKonversi {
         System.out.print("Masukkan pilahn : ");
         int pil = in.nextInt();
         switch (pil){
-            
-        }
+            case 1 : System.out.println("Masukkan angka yang dikonversikan : ");
+                     System.out.println();
+                     break;
+            case 2 : System.out.println("Masukkan bilangan dari 0-100 dalam bentuk kata : " );
+                     in.nextLine();
+                     String kata = in.nextLine();
+                     
+                     break;
+            default: System.out.println("Masukkan angka yang benar");
+        }            
     }
+    
     
 }
