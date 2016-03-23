@@ -15,7 +15,7 @@ public class Bab3KonversiAngka {
         ProsesKonversi convert = new ProsesKonversi();
         String loop;
         int pil;
-        
+        tampilanMenu();
         do {
             System.out.println("");
             System.out.print("    SILAHKAN PILIH MENU : ");
@@ -43,5 +43,15 @@ public class Bab3KonversiAngka {
         System.out.println("");
         System.out.println("     ===PROGRAM CLOSED===");
         System.out.println("         TERIMA KASIH    ");
+    }
+
+    public static void tampilanMenu() {
+        System.out.println("===PROGRAM KONVERSI ANGKA & HURUF===");
+        System.out.println("                MENU                ");
+        System.out.println("                                    ");
+        System.out.println("     1.KONVERSI HURUF>>ANGKA        ");
+        System.out.println("     2.KONVERSI ANGKA>>HURUF        ");
+        System.out.println("====================================");
+
     }
 }
