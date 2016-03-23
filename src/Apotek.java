@@ -1,5 +1,4 @@
 package bab3;
-
 public class Apotek {
     String nama; 
     String alamat;
@@ -9,14 +8,18 @@ public class Apotek {
     final int[] harga = {5000, 3500, 3000, 9000, 2500, 7500};
     public void tampilan() {
         System.out.println("");
-        
+        System.out.println("Silahkan memilih daftar nama obat pada menu dibawah ini : ");
+        System.out.println("============== Daftar Nama dan Harga Obat ==============");
+        System.out.println("  ========================= ===========================");
+        System.out.println("");
         for (int i = 0; i < obat.length; i++) {
             System.out.println((i + 1) + ". Nama Obat   : " + obat[i]);
             System.out.println("\tHarga       : " + harga[i] + "\n");
             for (int j = 0; j < harga.length; j++) {
             }
         }
-       
+     System.out.println("   ======================== =========================");
+        System.out.println("========================================================");  
     }
     public Apotek() {
         nama = "";
