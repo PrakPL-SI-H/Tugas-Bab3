@@ -2,8 +2,10 @@ package prakproglan;
 import java.util.Scanner;
 public class MainBilanganTeks {
     public static void main(String[] args) {
+        String loop;
         Scanner in = new Scanner(System.in);
         BilanganTeks bete = new BilanganTeks();
+        do{
         System.out.println("Pilihan Ubah : ");
         System.out.println("1. Mengubah Bilangan Menjadi Teks");
         System.out.println("2. Mengubah Teks Menjadi Bilangan");
@@ -28,5 +30,7 @@ public class MainBilanganTeks {
                 System.out.println("=================================");
                 break;
         }
-    }
-}
+            System.out.println("Apakah Anda Ingin Mengulang Lagi? (y/n)");
+            loop = in.next();
+    }while(loop.equalsIgnoreCase("Y"));
+}}
