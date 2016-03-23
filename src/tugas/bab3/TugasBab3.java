@@ -21,30 +21,31 @@ class Apotek {
          System.out.print(obat[i]+"  "+harga[i]);
      }
      public void daftarObat(String pilih, int jumlah){
-         for (int i = 0; i < obat.length; i++) {
-             if (pilih.equalsIgnoreCase(obat[i])){
-                beliObat = pilih;
-                this.jumlah = jumlah;
-                hargaTotal = harga[i]*jumlah;
-            }
+           if (pilih.equalsIgnoreCase("ObatA")){
+             beliObat = pilih;
+             this.jumlah = jumlah;
+             hargaTotal = harga[0]*jumlah;
+         }
+            else if (pilih.equalsIgnoreCase("ObatB")){
+             beliObat = pilih;
+             this.jumlah = jumlah;
+             hargaTotal = harga[1]*jumlah;
+         }
+            else if (pilih.equalsIgnoreCase("ObatA")){
+             beliObat = pilih;
+             this.jumlah = jumlah;
+             hargaTotal = harga[2]*jumlah;
+         }
             else{
                System.out.println("Obat Tidak Di temukan");
-            }
-            break;
+            }   
          } 
-     }
      public void showObat(){
          System.out.println("Obat yang anda beli : "+beliObat);
          System.out.println("dengan Jumlah       : "+jumlah);
          System.out.println("Total Harga adalah  : "+hargaTotal);    
      }    
 }
-
-
-
-
-
-
 public class TugasBab3 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
@@ -57,6 +58,7 @@ public class TugasBab3 {
             String alamat = in.next();
         Apotek user = new Apotek(nama, alamat);
         Apotek obat = new Apotek(daftar, Harga);
+        do{
         System.out.println("=Menu Sistem Informasi Apotek=");
         System.out.println("1. Daftar Obat");
         System.out.println("2. Pilihan Obat");
@@ -84,9 +86,11 @@ public class TugasBab3 {
                     System.out.println("=====Kuitansi Obat=====");
                     obat.showObat();
                     break;
+                case 4: 
+                    System.out.println("Terimakasih");
                 default:
                     System.out.println("Pilihan Tidak Tersedia !!");
             }
-    }
-    
+        }while(pilihan!=4);
+    }   
 }
