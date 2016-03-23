@@ -28,45 +28,45 @@ public void menu(){
     return Alamat;
 }
 public void pilihan(int pilih){
-    if ( pilih == 1){
-        System.out.println("Obat yang dibeli = Obat Sakit Kepala");
-        System.out.print("Berapa Obat yang dibeli =");
-        tmb = in.nextInt();
-        jumlah = 5000 * tmb;
-        jumlah++ ;
-    }else if (pilih == 2){
-        System.out.println("Obat yang dibeli = Obat Sakit Gigi");
-        System.out.print("Berapa Obat yang dibeli =");
-        tmb = in.nextInt();
-        jumlah = 6000 * tmb;
-        jumlah++ ;
-    }else if (pilih == 3){
-        System.out.println("Obat yang dibeli = Obat Sakit Flu");
-        System.out.print("Berapa Obat yang dibeli =");
-        tmb = in.nextInt();
-        jumlah = 7000 * tmb;
-        jumlah++ ;
-        }else if (pilih == 4){
-        System.out.println("Obat yang dibeli = Obat Sakit Panas");
-        System.out.print("Berapa Obat yang dibeli =");
-        tmb = in.nextInt();
-        jumlah = 6500 * tmb;
-        jumlah++ ;
-        }else if (pilih == 5){
-        System.out.println("Obat yang dibeli = Obat Sakit Pusing");
-        System.out.print("Berapa Obat yang dibeli =");
-        tmb = in.nextInt();
-        jumlah = 5000 * tmb;
-        jumlah++ ;
-        }else if (pilih == 6){
-        System.out.println("Obat yang dibeli = Obat Sakit Linu");
-        System.out.print("Berapa Obat yang dibeli =");
-        tmb = in.nextInt();
-        jumlah = 10000 * tmb;
-        jumlah++;
-        }else{
-        System.out.println("Yang anda pilih tidak tersedia !!!");
-        }
+if ( pilih == 1){
+    System.out.println("Obat yang dibeli = Obat Sakit Kepala");
+    System.out.print("Berapa Obat yang dibeli =");
+    tmb = in.nextInt();
+    jumlah = 5000 * tmb;
+    jumlah++ ;
+}else if (pilih == 2){
+    System.out.println("Obat yang dibeli = Obat Sakit Gigi");
+    System.out.print("Berapa Obat yang dibeli =");
+    tmb = in.nextInt();
+    jumlah = 6000 * tmb;
+    jumlah++ ;
+}else if (pilih == 3){
+    System.out.println("Obat yang dibeli = Obat Sakit Flu");
+    System.out.print("Berapa Obat yang dibeli =");
+    tmb = in.nextInt();
+    jumlah = 7000 * tmb;
+    jumlah++ ;
+}else if (pilih == 4){
+    System.out.println("Obat yang dibeli = Obat Sakit Panas");
+    System.out.print("Berapa Obat yang dibeli =");
+    tmb = in.nextInt();
+    jumlah = 6500 * tmb;
+    jumlah++ ;
+}else if (pilih == 5){
+    System.out.println("Obat yang dibeli = Obat Sakit Pusing");
+    System.out.print("Berapa Obat yang dibeli =");
+    tmb = in.nextInt();
+    jumlah = 5000 * tmb;
+    jumlah++ ;
+}else if (pilih == 6){
+    System.out.println("Obat yang dibeli = Obat Sakit Linu");
+    System.out.print("Berapa Obat yang dibeli =");
+    tmb = in.nextInt();
+    jumlah = 10000 * tmb;
+    jumlah++;
+}else{
+    System.out.println("Yang anda pilih tidak tersedia !!!");
+    }
 } 
 public void totalHarga(){
     System.out.println("======================================");
@@ -80,10 +80,10 @@ menu();
 System.out.print("Pilih Urutan = ");
 j =in.nextInt();
 pilihan(j);
-} while (j    != 0);
-System.out.print("Kembali ke menu awal");
-System.out.print("Ingin beli obat lagi? (y/n) : ");
-String s = in.next();
-System.out.println("===============================");
-}
+    } while (j    != 0);
+    System.out.print("Kembali ke menu awal");
+    System.out.print("Ingin beli obat lagi? (y/n) : ");
+    String s = in.next();
+    System.out.println("===============================");
+    }
 }
