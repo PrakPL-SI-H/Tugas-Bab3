@@ -47,3 +47,17 @@ public class Apotek {
             System.out.println("Pilihan Anda Tidak Ditemukan");
         }
     }
+
+    public static void HitungTotal(int x, int y) {
+        total = total + (x * y);
+        double p = Double.valueOf(x);
+        double q = Double.valueOf(y);
+        System.out.println("Jumlah = " + HitungTotal(p, q));
+        System.out.println("**************************************************");
+    }
+
+    public static double HitungTotal(double a, double b) {
+        double c = a * b;
+        return c;
+    }
+}
