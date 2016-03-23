@@ -2,7 +2,7 @@
 public class Konversi {
 
     public String teks[] = {"Nol", "Satu", "Dua", "Tiga", "Empat", "Lima", "Enam",
-        "Tujuh", "Delapan", "Sembilan", "Sepuluh", "Sebelas", "Seratus","null"};
+        "Tujuh", "Delapan", "Sembilan", "Sepuluh", "Sebelas", "Seratus"};
 
     public void overloadingMeth(int bil) {
         if (bil == 0) {
