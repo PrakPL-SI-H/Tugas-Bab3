@@ -1,36 +1,50 @@
-class  Konversi{
-    private final String[] angka = {"","0","1","2","3","4","5","6","7","8","9","10","11"};
-    private String nilaiAngka;
-    private final String[] huruf = {"","Satu","Dua","Tiga","Empat","Lima","Enam","Tujuh","Delapan","Sebilan","Sepuluh","Sebelas"};
-    private String nilaiHuruf;
-    public String getHasilAngka() {
-        return nilaiAngka;
-    }
-    public String angka(int satuan){
-		String hasil="";
-		if(satuan<12)
-			hasil=hasil+huruf[satuan];
-		else if(satuan<20)
-			hasil=hasil+angka(satuan-10)+" Belas";
-		else if(satuan<100)
-			hasil=hasil+angka(satuan/10)+" Puluh "+angka(satuan%10);
-		else if(satuan<200)
-			hasil=hasil+"Seratus "+angka(satuan-100);
-		else if(satuan<1000)
-			hasil=hasil+angka(satuan/100)+" Ratus "+angka(satuan%100);
-		else if(satuan<2000)
-			hasil=hasil+"Seribu "+angka(satuan-1000);
-		else if(satuan<1000000)
-			hasil=hasil+angka(satuan/1000)+" Ribu "+angka(satuan%1000);
-		else if(satuan<1000000000)
-			hasil=hasil+angka(satuan/1000000)+" Juta "+angka(satuan%1000000);
-		else if(satuan>=1000000000)
-			hasil="Angka terlalu besar, harus kurang dari 1 milyar!";
-		return hasil;
+class Konversi{
+private final String[] angka = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"};
+private String nilaiAngka;
+private final String[] huruf = {"Nol", "Satu", "Dua", "Tiga", "Empat", "Lima", "Enam",
+    "Tujuh", "Delapan", "Sembilan", "Sepuluh", "Sebelas"};
+private String nilaiHuruf;
+public String getHasilAngka() {
+    return nilaiAngka;
 }
-
-
-    public String getHasilHuruf() {
-        return nilaiHuruf;
+public String overloadingMeth(int angka) {
+nilaiHuruf = "";
+if (angka < 12) {
+    nilaiHuruf += huruf[angka];
+} else if (angka < 20) {
+    nilaiHuruf += huruf[angka - 10] + " Belas";
+} else if (angka < 100) {
+    nilaiHuruf += huruf[angka / 10] + " Puluh " + huruf[angka % 10];
+} else if (angka == 100) {
+    nilaiHuruf = "Seratus";
+} else if (angka == 0) {
+    nilaiHuruf = "Nol";
+} else if (angka > 100) {
+    System.err.println("Angka tidak boleh lebih dari 100 ( Seratus )loh ya !!!");
+}
+return nilaiHuruf;
+}
+public String overLoadingMeth(String huruf) {
+for (int i = 0; i < this.huruf.length; i++) {
+for (int j = 0; j < 10; j++) {
+if (huruf.equalsIgnoreCase(this.huruf[i])) {
+    nilaiAngka = angka[i];
+} else if (huruf.equalsIgnoreCase(this.huruf[i])) {
+    nilaiAngka = angka[i];
+} else if (huruf.equalsIgnoreCase(this.huruf[i] + " belas")) {
+    nilaiAngka = angka[1] + angka[i];
+} else if (huruf.equalsIgnoreCase(this.huruf[i] + " puluh")) {
+    nilaiAngka = angka[i] + angka[0];
+} else if (huruf.equalsIgnoreCase(this.huruf[i] + " puluh " + this.huruf[j])) {
+    nilaiAngka = angka[i] + angka[j];
+} else if (huruf.equalsIgnoreCase("Seratus")) {
+    nilaiAngka = angka[1] + angka[0] + angka[0];
     }
+  }
+}
+return nilaiAngka;
+}
+public String getHasilHuruf() {
+    return nilaiHuruf;
+}
 }
