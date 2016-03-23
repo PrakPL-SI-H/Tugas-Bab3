@@ -22,3 +22,26 @@ System.out.println("=Apotek=")
 + "4. D                 Rp. 21000\n"
 + "5. E                 Rp. 6000\n");
 }
+
+public void Apotek(int x){
+this.pilihan = x;
+switch (this.pilihan){
+case 1 : System.out.println("Kamu membeli obat "+namaobat[this.pilihan]+" dengan harga "+hargaobat[this.pilihan]);
+System.out.println("Obat berhasil dibeli");
+break;
+case 2 : System.out.println("Kamu membeli obat "+namaobat[this.pilihan]+" dengan harga "+hargaobat[this.pilihan]);
+System.out.println("Obat berhasil dibeli");
+break;
+case 3 : System.out.println("Kamu membeli obat "+namaobat[this.pilihan]+" dengan harga "+hargaobat[this.pilihan]);
+System.out.println("Obat berhasil dibeli");
+break;
+case 4 : System.out.println("Kamu membeli obat "+namaobat[this.pilihan]+" dengan harga "+hargaobat[this.pilihan]);
+System.out.println("Obat berhasil dibeli");
+break;
+case 5 : System.out.println("Kamu membeli obat "+namaobat[this.pilihan]+" dengan harga "+hargaobat[this.pilihan]);
+System.out.println("Obat berhasil dibeli");
+break;
+default :System.out.println("Tidak ditemukan");break;
+}
+}
+}
