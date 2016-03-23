@@ -64,3 +64,20 @@ overloadingMeth(b);
 }
 }
 
+class NewClass {
+
+    public static void main(String[] args) {
+Scanner input = new Scanner(System.in);
+PraktikumBab3 konversi = new PraktikumBab3();    
+System.out.println("Program Konversi");
+System.out.println("=================");
+System.out.println("[Range = 1 - 100!]");
+System.out.print("Masukkan teks bilangan : ");
+String y = input.nextLine();
+konversi.setTeksAng(y);
+System.out.print("Masukkan angka bilangan : ");
+int x = input.nextInt();
+konversi.setTeksBil(x); 
+    }
+}
+
