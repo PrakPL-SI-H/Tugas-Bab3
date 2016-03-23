@@ -93,5 +93,13 @@ public class MainKonversi {
         return translate;
     }
     
-    
+    public int getHasil(){
+        Angka=translate(x);
+        return Angka;
+    }
+    public void display(){
+        if (getHasil()>100)
+            System.out.println(Bilangan+" = Maaf masukan anda melebihi batas");
+        else System.out.println(Bilangan+" = "+getHasil());
+    }   
 }
