@@ -4,6 +4,7 @@ public class MainApotek {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         Apotek obat1 = new Apotek();
+        System.out.println("************ Selamat Datang di Apotek Sableng *************");
         System.out.print("Masukan Nama Anda   : ");
         obat1.nama = in.nextLine();
         System.out.print("Masukan Alamat Anda : ");
@@ -23,6 +24,7 @@ public class MainApotek {
             System.out.println("1. Iya    2. Tidak");
             System.out.print("Masukan pilihan : ");
             pilih = in.nextInt();
+            System.out.println("Terima kasih telah berbelanja di apotek");
         } while (pilih != 2);
     }
 }
