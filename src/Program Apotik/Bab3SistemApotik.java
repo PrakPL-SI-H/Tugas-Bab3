@@ -67,4 +67,14 @@ public class Bab3SistemApotik {
         System.out.println("   TERIMA KASIH");
     }
 
+    public static void menu() {
+        System.out.println("===SELAMAT DATANG DI APOTIK BAHTIAR===");
+        System.out.println("");
+        System.out.println("    MENU : ");
+        System.out.println("    1.Daftar Nama Obat");
+        System.out.println("    2.Pembelian Obat  ");
+        System.out.println("    3.Cetak Bukti Pembelian");
+        System.out.println("    4.Keluar");
+    }
+
 }
