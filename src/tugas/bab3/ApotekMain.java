@@ -72,7 +72,28 @@ public class ApotekMain {
          jumlah3 = in.nextInt();
            drug.Obat3(jumlah3);
                 break;
-           
+           case 4: 
+                 System.out.println("====Eynofarmin(obat mata pedas kebanyakan ngoding)====");
+        System.out.println("Harga per botol adalah 15000 rupiah");
+         System.out.println("Masukkan berapa botol yang akan anda beli");
+               
+                System.out.println("Banyak obat(botol)   = ");
+                
+         jumlah4 = in.nextInt();
+          drug.Obat4(jumlah4);
+                break;
+            case 5:
+               
+                 System.out.println("Harga total yang harus anda bayarkan adalah: " );
+                 drug.totalAll(jumlahsemua);
+                break;
+                
+            case 6: 
+                System.out.println("program akan diakhiri");
+                System.out.println("===Terimakasih telah menggunakan produk kami===");
+                
+                break;
+            
             default:
                 System.out.println("Mohon Maaf, Pilihan anda Tidak Ditemukan");      
         }
