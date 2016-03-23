@@ -62,4 +62,20 @@ public class DataApotek {
         } while (pilih!=0);       
     }
     
+    public void output(){
+        System.out.println("----------------------------------------------");
+        System.out.println("Sistem Informasi Penjualan Apotek");
+        System.out.println("Nama        : "+nama);
+        System.out.println("Alamat      : "+alamat);
+        System.out.println("---------------------------------------------------------------------");
+        System.out.println(" NO\tkode\t\t\tNAMA OBAT\t\tHARGA");
+        System.out.println("---------------------------------------------------------------------");
+        for (int i = 0; i < 10; i++) {
+            System.out.println(" "+(i+1)+"    ");
+            obat[i+1].display();
+        }
+        System.out.println("---------------------------------------------------------------------");
+        System.out.println("\t\t\t\t\t\t    Jumlah : Rp."+DH);
+        System.out.println("---------------------------------------------------------------------");
+    }
 }
