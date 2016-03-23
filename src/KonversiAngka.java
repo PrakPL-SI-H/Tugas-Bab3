@@ -29,7 +29,7 @@ public class KonversiAngka {
         } else if (nomor == 0) {
             nHuruf = "Nol";
         } else if (nomor > 100) {
-            System.err.println("Range untuk input adalah 1-100");
+            System.out.println("Range untuk input adalah 1-100");
         }
         return nHuruf;
     }
