@@ -1,11 +1,11 @@
-package bab3;
+package praktikum;
 
 import java.util.Scanner;
 public class MainKonversi {
-    public static void main(String[] args) {
+    public static void main(String[]args) {
         Konversi a = new Konversi();
         Scanner in = new Scanner(System.in);
-        System.out.println("======== Program Sederhana Pengubah Angka dan Huruf ========");
+        System.out.println("===== Program Sederhana Pengubah Angka dan Huruf =====");
         System.out.println("");
         int x;
         System.out.print("Masukkan Angka : ");

@@ -1,5 +1,4 @@
-package bab3;
-
+package praktikum;
 public class Konversi {
     static int a, b;
     public static void ubah(int x) {
