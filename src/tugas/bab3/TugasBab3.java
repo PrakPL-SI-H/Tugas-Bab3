@@ -31,10 +31,13 @@ class Apotek {
                System.out.println("Obat Tidak Di temukan");
             }
             break;
-         }
-        
+         } 
      }
-     
+     public void showObat(){
+         System.out.println("Obat yang anda beli : "+beliObat);
+         System.out.println("dengan Jumlah       : "+jumlah);
+         System.out.println("Total Harga adalah  : "+hargaTotal);    
+     }    
 }
 
 
@@ -76,7 +79,13 @@ public class TugasBab3 {
                     System.out.print("Masukkan Jumlah : ");
                     int jumlah = in.nextInt();
                     obat.daftarObat(pilih, jumlah);  
-                    break;     
+                    break; 
+                case 3:
+                    System.out.println("=====Kuitansi Obat=====");
+                    obat.showObat();
+                    break;
+                default:
+                    System.out.println("Pilihan Tidak Tersedia !!");
             }
     }
     
