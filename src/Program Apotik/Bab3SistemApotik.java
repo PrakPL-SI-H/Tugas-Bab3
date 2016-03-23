@@ -29,7 +29,23 @@ public class Bab3SistemApotik {
 
         DataApotik user = new DataApotik(nama, alamat); //overloading construktor
         DataApotik list = new DataApotik(daftar, price);
-        
+        System.out.println("===SELAMAT DATANG DI APOTIK BAHTIAR===");
+        System.out.println("");
+        do {
+            menu();
 
-}
+            System.out.println();
+            System.out.print("SILAHKAN PILIH MENU : ");
+
+            pil = in.nextInt();
+            switch (pil) {
+                case 1:
+                    System.out.println("    ===DAFTAR OBAT DAN HARGANYA===");
+                    for (int i = 0; i < daftar.length; i++) {
+                        list.olahData(i);
+
+                    }
+                    break;
+                
+
 }
