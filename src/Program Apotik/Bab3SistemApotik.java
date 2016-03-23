@@ -15,8 +15,8 @@ public class Bab3SistemApotik {
         int pil;
         String loop;
         String lagi;
-        String []beliobat;
-        int[]hargaobat;
+        String[] beliobat;
+        int[] hargaobat;
         String daftar[] = {"ObatH5N1", "ObatH222", "Obat5W1H", "ObatK2K3", "ObatXXXX"};
         int price[] = {10000, 20000, 30000, 40000, 50000};
 
@@ -29,6 +29,8 @@ public class Bab3SistemApotik {
 
         DataApotik user = new DataApotik(nama, alamat); //overloading construktor
         DataApotik list = new DataApotik(daftar, price);
+        System.out.println("===SELAMAT DATANG DI APOTIK BAHTIAR===");
+        System.out.println("");
         do {
             menu();
 
@@ -45,17 +47,18 @@ public class Bab3SistemApotik {
                     }
                     break;
                 case 2:
-                    do{
-                    System.out.println("===PEMBELIAN OBAT===");
-                    System.out.print("Masukkan Nama Obat   : ");
-                    String namaObat = in.next();
-                    System.out.print("masukkan Jumlah Obat : ");
-                    int jum = in.nextInt();
-                    list.olahData(namaObat, jum);
-                        System.out.println("Ingin Lagi ? (y/n)");
-                        lagi=in.next();
-                    }while(lagi=="y");
                     
+                        System.out.println("===PEMBELIAN OBAT===");
+                        do {
+                        System.out.print("Masukkan Nama Obat   : ");
+                        String namaObat = in.next();
+                        System.out.print("masukkan Jumlah Obat : ");
+                        int jum = in.nextInt();
+                        list.olahData(namaObat, jum);
+                        System.out.println("Ingin Lagi ? (y/n)");
+                        lagi = in.next();
+                    } while ("y".equals(lagi));break;
+
                 case 3:
                     System.out.println("            ===APOTIK BAHTIAR===");
                     System.out.println("    =====================================");
@@ -69,13 +72,12 @@ public class Bab3SistemApotik {
             }
 
         } while (pil != 4);
-        System.out.println("===APOTIK BAHTIAR===");
-        System.out.println("   TERIMA KASIH");
+        System.out.println("    ===APOTIK BAHTIAR===");
+        System.out.println("        TERIMA KASIH");
     }
 
     public static void menu() {
-        System.out.println("===SELAMAT DATANG DI APOTIK BAHTIAR===");
-        System.out.println("");
+
         System.out.println("    MENU : ");
         System.out.println("    1.Daftar Nama Obat");
         System.out.println("    2.Pembelian Obat  ");
