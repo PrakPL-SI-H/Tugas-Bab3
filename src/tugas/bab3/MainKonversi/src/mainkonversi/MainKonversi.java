@@ -50,4 +50,48 @@ public class MainKonversi {
     return "";
     }
     
+    public void overloading (String y){
+    Bilangan=y;
+    x=y.split(" ");
+    }
+    
+    public int translate (String[] y){
+    int translate=0;
+        for (int i = 0; i <x.length; i++) {
+            if (y[i].equalsIgnoreCase("nol"))
+                translate+=0;
+            else if (y[i].equalsIgnoreCase("satu"))
+                translate+=1;
+            else if (y[i].equalsIgnoreCase("dua"))
+                translate+=2;
+            else if (y[i].equalsIgnoreCase("tiga"))
+                translate+=3;
+            else if (y[i].equalsIgnoreCase("empat"))
+                translate+=4;
+            else if (y[i].equalsIgnoreCase("lima"))
+                translate+=5;
+            else if (y[i].equalsIgnoreCase("enam"))
+                translate+=6;
+            else if (y[i].equalsIgnoreCase("tujuh"))
+                translate+=7;
+            else if (y[i].equalsIgnoreCase("delapan"))
+                translate+=8;
+            else if (y[i].equalsIgnoreCase("sembilan"))
+                translate+=9;
+            else if (y[i].equalsIgnoreCase("puluh"))
+                translate+=10;
+            else if (y[i].equalsIgnoreCase("belas"))
+                translate+=10;
+            else if (y[i].equalsIgnoreCase("sepuluh"))
+                translate+=10;
+            else if (y[i].equalsIgnoreCase("sebelas"))
+                translate+=11;
+            else if (y[i].equalsIgnoreCase("seratus"))
+                translate+=100;
+            else translate+=1000;
+        }
+        return translate;
+    }
+    
+    
 }
