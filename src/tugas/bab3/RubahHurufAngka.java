@@ -42,18 +42,24 @@ public class RubahHurufAngka {
 
     public String overloadingMeth(int angka) {
         if (angka >= 0 && angka <= 100) {
-            int kata1,kata2, kata3;
-            kata1 = angka;
-            kata2 = angka % 10;
-            kata3 = (angka % 100) / 10;
-            if (kata1 < 12) {
+            if (angka < 12) {
                 hasil = kata[angka];
-            } else if (kata2 == 0) {
-                hasil = overloadingMeth(angka / 10) + "puluh";
+            } else if (angka < 20) {
+                hasil = hasil + overloadingMeth(angka - 10) + " belas";
+            } else if (angka % 10 == 0) {
+                hasil = overloadingMeth(angka / 10) + " puluh";
+            } else if (angka < 100) {
+                hasil = overloadingMeth(angka / 10) + " puluh " + overloadingMeth(angka % 10);
+            } else if (angka == 100) {
+                hasil = kata[12];
             }
-            
-            
-            }
-
+        } else {
+            System.out.println("Masukkan antara 0-100");   
         }
+        return hasil;
     }
+
+    public void display() {
+        System.out.println("Output: " + hasil);
+    }
+}
