@@ -1,5 +1,7 @@
 package prak3;
+
 import java.util.Scanner;
+
 public class OverloadingMeth {
 
     String[] satuanHuruf = {"", "Satu", "Dua", "Tiga", "Empat", "Lima", "Enam", "Tujuh", "Delapan", "Sembilan", "Sepuluh", "Sebelas"};
@@ -24,7 +26,7 @@ public class OverloadingMeth {
         }
     }
 
-    public  String overloadingMeth(String huruff) {
+    public String overloadingMeth(String huruff) {
         String huruf[] = {"nol", "satu", "dua", "tiga", "empat", "lima", "enam", "tujuh", "delapan", "sembilan", "sepuluh"};
         String angka[] = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"};
         String[] no = huruff.split(" ");

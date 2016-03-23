@@ -13,6 +13,6 @@ public static void main(String[] args) {
         System.out.print("Input angka dalam huruf (Satu-Seratus) : ");
         String hur = in2.nextLine();
         System.out.println("Angka : "+o.overloadingMeth(hur));
-        
     }
 }	
+

@@ -37,8 +37,7 @@ public class MainApotek {
         }
         System.out.println("=================================================");
         a.diplayMessage();
-        System.out.println("=================================================");
+System.out.println("=================================================");
         System.out.println("\tTERIMA KASIH ATAS KUNJUNGAN ANDA");
     }
 }
-
