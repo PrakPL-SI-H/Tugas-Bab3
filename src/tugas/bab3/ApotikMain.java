@@ -11,5 +11,21 @@ public class ApotikMain {
     static int[] jumlah = new int[5];
     static int[] harga = {4000, 15000, 5000, 5000, 12000};
     
-    
+    public static void main(String[] args) {
+        System.out.println("SELAMAT DATANG DI APOTEK AMANAH");
+        System.out.println("-------------------------------");
+        System.out.println("     JL.MT.HARYONO NO.264      ");
+        System.out.println("===============================");
+        System.out.print("Masukkan nama pasien       : ");
+        nama = in.nextLine();
+        System.out.print("Masukkan alamat            : ");
+        alamat = in.nextLine();
+
+        Apotik pasien = new Apotik();
+        Apotik item = new Apotik(obat, harga);
+
+        item.daftarHarga();
+
+        int pilih;
+
 }
