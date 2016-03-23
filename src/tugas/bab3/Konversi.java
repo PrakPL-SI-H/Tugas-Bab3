@@ -58,10 +58,10 @@ public class Konversi {
                 if (satuan == 1) {
                     System.out.println("Bilangannya adalah : "+bilangansatuan[11]);
                 } else {
-                    System.out.println("Nilainya adalah : " + bilangansatuan[satuan] + " belas");
+                    System.out.println("Bilangannya adalah : " + bilangansatuan[satuan] + " belas");
                 }
             } else {
-                System.out.println("Nilainya adalah : " + bilangansatuan[puluhan] + " puluh " + bilangansatuan[satuan]);
+                System.out.println("Bilangannya adalah : " + bilangansatuan[puluhan] + " puluh " + bilangansatuan[satuan]);
             }
         }
     }
