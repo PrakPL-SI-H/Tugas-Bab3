@@ -1,14 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Praktikum3;
 
-/**
- *
- * @author Arif Ramadhan
- */
+import java.util.Scanner;
+
 public class KonversiMain {
-    
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        Konversi konversi = new Konversi();
+        System.out.println("KONVERSI BILANGAN-ANGKA (satu-seratus)");
+        System.out.println("======================================");
+        System.out.print("Masukkan bilangan : ");
+        String y = in.nextLine();
+        konversi.showAngka(y);
+
+    }
 }
