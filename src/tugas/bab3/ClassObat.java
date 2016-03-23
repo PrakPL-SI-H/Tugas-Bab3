@@ -18,7 +18,20 @@ public class ClassObat {
         System.out.println("Harganya adalah ="+totalObat2);
          
    }
+     public void Obat3(int jumlah3){
+      
      
+       System.out.println("jumlah=" +jumlah3);
+          totalObat3=(jumlah3*25000);
+        System.out.println("Harganya adalah ="+totalObat3);
+         
+   }
+       public void Obat4(int jumlah4){
+       System.out.println("jumlah=" +jumlah4);
+          totalObat4=(jumlah4*15000);
+        System.out.println("Harganya adalah ="+totalObat4);
+   
+   }
        public void totalAll(int jumlahsemua){
           
          int TotalSemua = totalObat1+totalObat2+totalObat3+totalObat4;
