@@ -29,7 +29,7 @@ class Apotek {
              this.jumlah = jumlah;
              hargaTotal = harga[1]*jumlah;
          }
-            else if (pilih.equalsIgnoreCase("ObatA")){
+            else if (pilih.equalsIgnoreCase("ObatC")){
              beliObat = pilih;
              this.jumlah = jumlah;
              hargaTotal = harga[2]*jumlah;
@@ -86,6 +86,7 @@ public class TugasBab3 {
                     break;
                 case 4: 
                     System.out.println("Terimakasih");
+                    break;
                 default:
                     System.out.println("Pilihan Tidak Tersedia !!");
             }
