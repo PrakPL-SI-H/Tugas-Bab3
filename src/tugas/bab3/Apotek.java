@@ -60,4 +60,10 @@ public class Apotek {
         double c = a * b;
         return c;
     }
+
+    public void diplayMessage() {
+        System.out.println("Nama                        : " + nama);
+        System.out.println("Alamat                      : " + alamat);
+        System.out.println("Total Bayar                 : Rp " + total + ",-");
+    }
 }
