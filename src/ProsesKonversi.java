@@ -15,10 +15,10 @@ public class ProsesKonversi {
 
     }
     String[] normalword = {"Nol", "Satu", "Dua", "Tiga", "Empat", "Lima", "Enam",
-        "Tujuh", "Delapan", "Sembilan", "Sepuluh", "Sebelas"};
-    String[] num = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"};
+        "Tujuh", "Delapan", "Sembilan", "Sepuluh", "Sebelas"};                     //array untuk kata angka yang normal
+    String[] num = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"}; //array untuk angka2 tanpa penambahan satuan
 
-    public String overloadingMeth(int angka) {
+    public String overloadingMeth(int angka) { //contoh dari overloading method
         int x;
         x = angka % 10;
         valueword = "";
@@ -43,7 +43,7 @@ public class ProsesKonversi {
         return valueword;
     }
 
-    public String overLoadingMeth(String huruf) {
+    public String overLoadingMeth(String huruf) {//contoh dari overloading method
         for (int i = 0; i < normalword.length; i++) {
             for (int j = 0; j < 10; j++) {
                 if (huruf.equalsIgnoreCase(normalword[i])) {
