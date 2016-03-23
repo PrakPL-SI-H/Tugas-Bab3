@@ -45,3 +45,20 @@ default :System.out.println("Tidak ditemukan");break;
 }
 }
 }
+
+class MainApotek {
+public static void main(String args[]){
+Scanner input = new Scanner (System.in);
+String nama, alamat;
+int pilihan;
+System.out.print("Nama : ");
+nama = input.nextLine();
+System.out.print("Alamat : ");
+alamat = input.nextLine();
+Apotek apk = new Apotek(nama,alamat);
+apk.Apotek();
+System.out.print("Mau ambil obat nomor berapa? ");
+pilihan = input.nextInt();
+Apotek apk2 = new Apotek(pilihan);      
+}
+}
