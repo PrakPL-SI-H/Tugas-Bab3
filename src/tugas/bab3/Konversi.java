@@ -5,6 +5,7 @@ public class Konversi {
     int angka, hasila;
     String bilangan, hasilb;
 
+    //default konstruktor
     public Konversi() {
     }
 
@@ -24,7 +25,7 @@ public class Konversi {
     //angka satuan 1-11
     int[] satuan = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11};
 
-    
+    //mengkonversi bilangan ke angka
     public void overloadingMethod(String b) {
         if (b.equalsIgnoreCase("seratus")) {
             hasila = 100;
@@ -46,6 +47,7 @@ public class Konversi {
         System.out.println("Hasilnya = " + hasila);
     }
 
+    //mengkonversi angka ke bilangan
     public void overloadingMethod(int a) {
         int satuan, puluhan;
         satuan = a % 10;
