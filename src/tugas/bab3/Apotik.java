@@ -18,7 +18,7 @@ public class Apotik {
 
     public void daftarHarga() {
         System.out.println("====================================");
-        System.out.println("\t DRUG \t\t PRICE");
+        System.out.println("\t NAMA \t\t HARGA");
         for (int i = 0; i < obat.length; i++) {
             System.out.printf("\t%s\t\t %d\n", obat[i], harga[i]);
         }
@@ -34,7 +34,7 @@ public class Apotik {
         int i, j, k;
         int l = 0;
         int TOTAL = 0;
-        System.out.println("DRUG \t\t QTY \t PRICE \t TOTAL");
+        System.out.println("NAMA \t\t JUMLAH \t HARGA \t TOTAL");
         System.out.println("================================");
         for (i = 0; i < obat.length; i++, l++) {
             if (jumlah[i] == 0) {
@@ -52,5 +52,4 @@ public class Apotik {
         System.out.println("\t\t\t\t " + TOTAL);
         System.out.println("==================");
     }
-
 }

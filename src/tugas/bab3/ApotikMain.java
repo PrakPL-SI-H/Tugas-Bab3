@@ -42,27 +42,28 @@ public class ApotikMain {
                     input();
                     break;
                 case 2:
-                    System.out.println(line);
-                    System.out.println("SUMMARY");
-                    System.out.println(line);
+                    System.out.println("SELAMAT DATANG DI APOTEK AMANAH");
+                    System.out.println("-------------------------------");
+                    System.out.println("     JL.MT.HARYONO NO.264      ");
+                    System.out.println("===============================");
                     pasien.id(nama, alamat);
-                    System.out.println(line);
+                    System.out.println("-------------------------------");
                     item.daftarHarga(inputObat, jumlah);
                     break;
             }
         } while (pilih != 0);
 
     }
+
     private static void input() {
 
-        System.out.println("========================================");
         for (int i = 0; i < 6; i++) {
-            System.out.print("Drug name  " + (i + 1) + "         = ");
+            System.out.print("Masukkan nama obat  " + (i + 1) + "         = ");
             inputObat[i] = in.next();
-            System.out.print("Qty        " + (i + 1) + "         = ");
+            System.out.print("Masukkan Jumlah     " + (i + 1) + "         = ");
             jumlah[i] = in.nextInt();
             if (jumlah[i] == 0) {
-                System.out.println("====================================");
+            System.out.println("================================");
                 break;
             }
         }
