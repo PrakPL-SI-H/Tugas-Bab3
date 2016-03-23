@@ -50,6 +50,13 @@ public class DataApotik {
         }
     }
 
-    
+    public void outputProgram() {
+        System.out.println(" =========================================");
+        System.out.println("   Jenis Obat Yang Anda Beli :" + nama );
+        System.out.println("   Dengan Jumlah Obat        :" + jum);
+        System.out.println("   Maka Total Bayar Anda     :Rp." + total);
+        System.out.println(" =========================================");
+
+    }
 
 }
