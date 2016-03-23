@@ -14,4 +14,9 @@ public class ProsesKonversi {
         System.out.println("Maka Hasil Konversinya : " + valuenum);
 
     }
+    String[] normalword = {"Nol", "Satu", "Dua", "Tiga", "Empat", "Lima", "Enam",
+        "Tujuh", "Delapan", "Sembilan", "Sepuluh", "Sebelas"};
+    String[] num = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"};
+
+
 }
