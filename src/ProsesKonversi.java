@@ -42,4 +42,26 @@ public class ProsesKonversi {
         }
         return valueword;
     }
+
+    public String overLoadingMeth(String huruf) {
+        for (int i = 0; i < normalword.length; i++) {
+            for (int j = 0; j < 10; j++) {
+                if (huruf.equalsIgnoreCase(normalword[i])) {
+                    valuenum = num[i];
+                } else if (huruf.equalsIgnoreCase(normalword[i])) {
+                    valuenum = num[i];
+                } else if (huruf.equalsIgnoreCase(normalword[i] + " belas")) {
+                    valuenum = num[1] + num[i];
+                } else if (huruf.equalsIgnoreCase(normalword[i] + " puluh")) {
+                    valuenum = num[i] + num[0];
+                } else if (huruf.equalsIgnoreCase(normalword[i] + " puluh " + normalword[j])) {
+                    valuenum = num[i] + num[j];
+                } else if (huruf.equalsIgnoreCase("Seratus")) {
+                    valuenum = num[1] + num[0] + num[0];
+                }
+            }
+        }
+        return valuenum;
+    }
+
 }
