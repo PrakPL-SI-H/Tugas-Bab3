@@ -10,7 +10,7 @@ public class MainRubahHurufAngka {
         RubahHurufAngka rubah = new RubahHurufAngka();
         while (true) {
             System.out.println("\n======Konversi======\n");
-            System.out.println("1. Konversi Huruf Ke Angka\n" + "2. Konversi Angka Ke Huruf\n"+"3.Exit");
+            System.out.println("1. Konversi Huruf Ke Angka\n" + "2. Konversi Angka Ke Huruf\n"+"3. Exit");
             System.out.print("Masukan pilihan: ");
             int pil = in.nextInt();
 
