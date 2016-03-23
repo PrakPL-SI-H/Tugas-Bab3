@@ -19,3 +19,33 @@ public class OverloadingMeth {
             System.out.println("Angka yang Anda Masukkan Melebihi 100");
         }
     }
+    public static String overloadingMeth(String huruff) {
+        String huruf[] = {"nol", "satu", "dua", "tiga", "empat", "lima", "enam", "tujuh", "delapan", "sembilan", "sepuluh"};
+        String num[] = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"};
+        String[] no = huruff.split(" ");
+        String hasil = "";
+        for (int i = 0; i < no.length; i++) {
+            for (int j = 0; j < huruf.length; j++) {
+                if (no.length == 3) {
+                    if (no[i].indexOf(huruf[j]) >= 0) {
+                        hasil = hasil + num[j];
+                    }
+                } else if (no.length == 2) {
+                    if (no.length == 2 && no[1].equalsIgnoreCase("puluh") && no[i].equalsIgnoreCase(huruf[j])) {
+                        hasil = num[j] + "0";
+                    } else if (no.length == 2 && no[1].equalsIgnoreCase("belas") && no[0].equalsIgnoreCase(huruf[j])) {
+                        hasil = "1" + num[j];
+                    }
+                } else {
+                    if (no[0].equalsIgnoreCase("sebelas")) {
+                        hasil = "11";
+                    } else if (no[0].equalsIgnoreCase(huruf[j])) {
+                        hasil = num[j];
+                    } else if (no[0].equalsIgnoreCase("seratus")) {
+                        hasil = "100";
+                    }
+                }
+            }
+        }
+        return hasil;
+    }
