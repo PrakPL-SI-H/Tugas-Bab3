@@ -43,9 +43,9 @@ public class MainKonversi {
     if (angka<12){
         return angkabilangan[angka.intValue()];}
     if (angka>=12 && angka <= 19){
-        return angkabilangan[angka.intValue()%10]+"belas";}
+        return angkabilangan[angka.intValue()%10]+" belas ";}
     if (angka>=20 && angka <= 99){
-        return angkaKonversi(angka/10)+"puluh"+ angkabilangan[angka.intValue()%10];}
+        return angkaKonversi(angka/10)+" puluh "+ angkabilangan[angka.intValue()%10];}
     if (angka==100){
         return "seratus";}
     return "";
@@ -80,7 +80,7 @@ public class MainKonversi {
             else if (y[i].equalsIgnoreCase("sembilan"))
                 translate+=9;
             else if (y[i].equalsIgnoreCase("puluh"))
-                translate+=10;
+                translate*=10;
             else if (y[i].equalsIgnoreCase("belas"))
                 translate+=10;
             else if (y[i].equalsIgnoreCase("sepuluh"))
