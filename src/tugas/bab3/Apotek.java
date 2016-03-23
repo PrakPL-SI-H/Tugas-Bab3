@@ -1,14 +1,17 @@
 package prakproglan;
-import java.util.Scanner;
 public class Apotek {
     
-    public static void main(String[] args) {
-        String nama, alamat;
-        Scanner in = new Scanner(System.in);
+        String nama;
+        String alamat;
+        String obat;
+        int harga;
+        int total;
         
-        System.out.print("Nama : ");
-        nama = in.nextLine();
-        System.out.print("Alamat : ");
-        alamat = in.nextLine();
-    }
+        public void setNama(String n){
+            nama=n;
+        }
+        public void setAlamat(String a){
+            alamat=a;
+        }
 }
+
