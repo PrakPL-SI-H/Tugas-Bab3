@@ -14,6 +14,8 @@ public class ClassBilangan {
             huruf = (rubah(b - 10) + " belas ");
         } else if (b < 100) {
             huruf = (rubah(b / 10) + " puluh " + rubah(b % 10));
+        } else {
+            huruf = "seratus";
         }
         return huruf;
     }
@@ -48,6 +50,8 @@ public class ClassBilangan {
                 angka += 10;
             } else if (isi.equalsIgnoreCase("sepuluh")) {
                 angka += 10;
+            } else {
+                angka = 100;
             }
         }
         return angka;
