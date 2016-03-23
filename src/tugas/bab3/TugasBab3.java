@@ -36,3 +36,31 @@ hasilsatuan = a * 10 + b;
 System.out.println("Outpunya adalah "+hasilsatuan);
 }
 
+public void overloadingMeth(int y) {
+int satuan, puluhan;
+satuan = y % 10;
+puluhan = (y % 100) / 10;
+if (y == 100) { hasilbilangan = "seratus";
+System.out.println("Nilainya adalah : seratus");
+} else {
+if (puluhan == 1) {
+if (satuan == 1) {
+System.out.println("Nilainya adalah : sebelas");
+}
+else{
+System.out.println("Nilainya adalah : "+bilangans[satuan]+" belas");  
+}   
+}
+else{
+System.out.println("Nilainya adalah : "+bilangans[puluhan]+" puluh "+bilangans[satuan]);
+}
+}
+}
+public void setTeksBil(int a) {
+overloadingMeth(a);
+}
+public void setTeksAng (String b){
+overloadingMeth(b);
+}
+}
+
