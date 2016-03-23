@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class ApotikMain {
 
     static Scanner in = new Scanner(System.in);
-    static String[] obat = {"Paramex", "Super Tetra", "Promagh", "Fatigon", "Panadol"};
+    static String[] obat = {"Paramex", "STetra", "Promagh", "Fatigon", "Panadol"};
     static String[] inputObat = new String[4];
     static String nama, alamat;
     static int[] jumlah = new int[5];
@@ -28,6 +28,7 @@ public class ApotikMain {
 
         int pilih;
         do {
+            System.out.println("");
             System.out.println("SELAMAT DATANG DI APOTEK AMANAH");
             System.out.println("-------------------------------");
             System.out.println("     JL.MT.HARYONO NO.264      ");
@@ -42,6 +43,7 @@ public class ApotikMain {
                     input();
                     break;
                 case 2:
+                    System.out.println("");
                     System.out.println("SELAMAT DATANG DI APOTEK AMANAH");
                     System.out.println("-------------------------------");
                     System.out.println("     JL.MT.HARYONO NO.264      ");

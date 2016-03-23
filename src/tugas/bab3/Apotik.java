@@ -26,8 +26,8 @@ public class Apotik {
     }
 
     public void id(String nama, String alamat) {
-        System.out.println("Patient name          : " + nama);
-        System.out.println("Patient address       : " + alamat);
+        System.out.println("Nama Pasien          : " + nama);
+        System.out.println("Alamat               : " + alamat);
     }
 
     public void daftarHarga(String[] obat, int[] jumlah) {
@@ -43,13 +43,13 @@ public class Apotik {
             for (k = 0; k < obat.length; k++) {
                 if (obat[l].equalsIgnoreCase(this.obat[k])) {
                     int TOT = jumlah[i] * harga[k];
-                    System.out.printf("%s\t\t %d\t %d\t %d", this.obat[k], jumlah[i], harga[k], TOT);
+                    System.out.printf("%s\t  \t %d  \t   %d  \t  %d", this.obat[k], jumlah[i], harga[k], TOT);
                     TOTAL += TOT;
                 }
             }
         }
         System.out.println("\n" + "==================");
-        System.out.println("\t\t\t\t " + TOTAL);
+        System.out.println("TOTAL : Rp." + TOTAL);
         System.out.println("==================");
     }
 }
