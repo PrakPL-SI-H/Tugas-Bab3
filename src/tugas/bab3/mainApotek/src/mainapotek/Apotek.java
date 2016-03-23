@@ -1,4 +1,5 @@
 package mainapotek;
+
 public class Apotek {
     String Kode;
     String Nama;
@@ -6,11 +7,13 @@ public class Apotek {
     
     public Apotek(){
     }
-    public Apotek(String a,String b,double c){
-        Kode = a;
-        Nama = b;
-        harga = c;
+    
+    public Apotek(String x,String y,double z){
+        Kode = x;
+        Nama = y;
+        harga = z;
     }
+    
     public void display(){
         System.out.printf("%7s%19s%-24s%s%s\n",Kode," ",Nama,"Rp.",harga);
     }

@@ -3,17 +3,17 @@ package mainapotek;
 import java.util.Scanner;
 
 public class DataApotek {
-    private String nama, alamat;
+    private String nama, Alamat;
     Apotek [] obat = new Apotek [6];
     private int no=0,DH=0;
-    Scanner s = new Scanner(System.in);
+    Scanner input = new Scanner(System.in);
     
     public DataApotek(){
     }
     
-    public void DataApotek(String nama, String alamat){
+    public void DataApotek(String nama, String Alamat){
         this.nama= nama;
-        this.alamat= alamat;
+        this.Alamat= Alamat;
     }
     
     public void daftar(){
@@ -30,7 +30,7 @@ public class DataApotek {
             System.out.println("----------------------------------------------");
             System.out.println("|   0.    Keluar                             |");
             System.out.print("Masukkan pilihan anda : ");
-            pilih = s.nextInt();
+            pilih = input.nextInt();
             switch (pilih){
                 case 1: no++;
                         obat[no] = new Apotek("KO123", "Obat Gatal", 5000);
@@ -66,12 +66,12 @@ public class DataApotek {
         System.out.println("----------------------------------------------");
         System.out.println("Sistem Informasi Penjualan Apotek");
         System.out.println("Nama        : "+nama);
-        System.out.println("Alamat      : "+alamat);
+        System.out.println("Alamat      : "+Alamat);
         System.out.println("---------------------------------------------------------------------");
         System.out.println(" NO\tkode\t\t\tNAMA OBAT\t\tHARGA");
         System.out.println("---------------------------------------------------------------------");
-        for (int i = 0; i < 10; i++) {
-            System.out.println(" "+(i+1)+"    ");
+        for (int i = 0; i < no; i++) {
+            System.out.print(" "+(i+1)+"    ");
             obat[i+1].display();
         }
         System.out.println("---------------------------------------------------------------------");
