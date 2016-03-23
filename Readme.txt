@@ -10,4 +10,4 @@ Nama	: Firdha Sabiilarrasyad
 
 NIM 	: 155150407111063
 
-KELAS   : Sistem Informasi - I
+KELAS   : Sistem Informasi - H
