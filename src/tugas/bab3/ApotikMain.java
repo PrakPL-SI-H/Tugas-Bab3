@@ -51,5 +51,20 @@ public class ApotikMain {
                     break;
             }
         } while (pilih != 0);
+
+    }
+    private static void input() {
+
+        System.out.println("========================================");
+        for (int i = 0; i < 6; i++) {
+            System.out.print("Drug name  " + (i + 1) + "         = ");
+            inputObat[i] = in.next();
+            System.out.print("Qty        " + (i + 1) + "         = ");
+            jumlah[i] = in.nextInt();
+            if (jumlah[i] == 0) {
+                System.out.println("====================================");
+                break;
+            }
+        }
     }
 }
