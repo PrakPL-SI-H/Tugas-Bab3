@@ -20,6 +20,16 @@ public class Bab3SistemApotik {
         String daftar[] = {"ObatH5N1", "ObatH222", "Obat5W1H", "ObatK2K3", "ObatXXXX"};
         int price[] = {10000, 20000, 30000, 40000, 50000};
 
+        System.out.println("    Masukkan Identitas Diri");
+        System.out.print("Nama Anda   : ");
+        String nama = in.nextLine();
+        System.out.print("Alamat Anda : ");
+        String alamat = in.nextLine();
+        System.out.println();
+
+        DataApotik user = new DataApotik(nama, alamat); //overloading construktor
+        DataApotik list = new DataApotik(daftar, price);
         
 
-}}
+}
+}
