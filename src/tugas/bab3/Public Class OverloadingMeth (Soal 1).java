@@ -1,3 +1,5 @@
+package overloadingmeth;
+import java.util.Scanner;
 public class OverloadingMeth {
     String[] word = {"", "Satu", "Dua", "Tiga", "Empat", "Lima", "Enam", "Tujuh", "Delapan", "Sembilan", "Sepuluh", "Sebelas"};
     String[] number = {"", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"};
@@ -49,3 +51,19 @@ public class OverloadingMeth {
         }
         return hasil;
     }
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
+        OverloadingMeth a = new OverloadingMeth();
+        System.out.println("==========================================");
+        System.out.print("Masukan angka             : ");
+        int num = in.nextInt();
+        System.out.print("Output berupa Huruf       : ");
+        a.overloadingMeth(num);
+        System.out.println("==========================================");
+        System.out.print("Masukan angka dalam huruf : ");
+        String huruf = input.nextLine();
+        System.out.println("Output berupa Angka       : " + overloadingMeth(huruf));
+        System.out.println("==========================================");
+    }
+}
