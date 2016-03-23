@@ -1,7 +1,5 @@
 package tugas.bab3;
-
 import java.util.Scanner;
-
 class Apotek {
     public String nama;
      public String alamat;
