@@ -12,5 +12,21 @@ public class Konversi {
     public String getHasilAngka() {
         return nilaiAngka;
     }
-
+  public String overloadingMeth(int angka) {
+        nilaiHuruf = "";
+        if (angka < 12) {
+            nilaiHuruf += huruf[angka];
+        } else if (angka < 20) {
+            nilaiHuruf += huruf[angka - 10] + " Belas";
+        } else if (angka < 100) {
+            nilaiHuruf += huruf[angka / 10] + " Puluh " + huruf[angka % 10];
+        } else if (angka == 100) {
+            nilaiHuruf = "Seratus";
+        } else if (angka == 0) {
+            nilaiHuruf = "Nol";
+        } else if (angka > 100) {
+            System.err.println("Angka tidak boleh lebih dari 100,dan angka anda melebihi 100 ");
+        }
+        return nilaiHuruf;
+    }
 }
