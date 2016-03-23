@@ -27,12 +27,13 @@ public class MainKonversi {
         int pil = in.nextInt();
         switch (pil){
             case 1 : System.out.println("Masukkan angka yang dikonversikan : ");
-                     System.out.println();
+                     System.out.println(new MainKonversi().angkaKonversi(in.nextLong()));
                      break;
             case 2 : System.out.println("Masukkan bilangan dari 0-100 dalam bentuk kata : " );
                      in.nextLine();
                      String kata = in.nextLine();
-                     
+                     me.overloading(kata);
+                     me.display();
                      break;
             default: System.out.println("Masukkan angka yang benar");
         }            
