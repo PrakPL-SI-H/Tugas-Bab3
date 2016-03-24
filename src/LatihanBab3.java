@@ -1,11 +1,9 @@
 import java.util.Scanner;
 //Class Conversion untuk mengkoversi dari string ke int maupun sebaliknya
 class Conversion{
-
 //inisialisasi isi dari array var
  String Var[] = {"","Satu","Dua","Tiga","Empat","Lima","Enam","Tujuh",
                  "Delapan","Sembilan","Sepuluh","Sebelas","Seratus","nol"};
- 
  //overoading method untuk konversi dari tipe data int ke tipe data string
  public void NrOverload ( int X ){
         if (X == 0){
@@ -46,18 +44,18 @@ class Conversion{
        System.out.println("Hasil Konversi : "+(i)+(j));
            }
        }
-      } 
-    
+      }    
     }
 }
-
-
+//Main Class
 public class LatihanBab3 {
     public static void main(String[] args) {
-        System.out.println("tess");
-        
-        
+       Scanner in = new Scanner(System.in);
+        Conversion Konversi = new Conversion();
+            System.out.print("Konversi String to Int (0-100): ");
+                 Konversi.NrOverload(in.next());
+            System.out.print("Konversi int to String (0-100): ");
+                 Konversi.NrOverload(in.nextInt());
     }
-    
 }
 
