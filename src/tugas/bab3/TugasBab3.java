@@ -1,19 +1,28 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package tugas.bab3;
+import java.util.Scanner;
+    //inisialisasi atribute untuk di gunakan dalam program 
+    class SIApotik{
+    public String nama, alamat, NamaObat;
+    public int jumlah, total;
+    public String obat[];
+    public int harga[];
+    //Constructor untuk obar[], dan harga[]    
+    public SIApotik (String[] obat, int[] harga){
+        this.obat = obat;
+        this.harga = harga;
+    }    
+    //method untuk menampilkan data obat
+    public void DataObat(int i){
+         System.out.print(obat[i]+": "+harga[i]);
+    }
+    }
 
-/**
- *
- * @author irwin deriyan
- */
+
+    
+
+
+
 public class TugasBab3 {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         // TODO code application logic here
     }
