@@ -53,7 +53,7 @@ public class LatihanBab3 {
        Scanner in = new Scanner(System.in);
         Conversion Konversi = new Conversion();
             System.out.print("Konversi String to Int (0-100): ");
-                 Konversi.NrOverload(in.next());
+                 Konversi.NrOverload(in.nextLine());
             System.out.print("Konversi int to String (0-100): ");
                  Konversi.NrOverload(in.nextInt());
     }
