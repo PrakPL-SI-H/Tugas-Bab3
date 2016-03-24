@@ -40,7 +40,7 @@ import java.util.Scanner;
             }   
          }
      public void List(){
-        // System.out.println("====LIST PEMBELIAN OBBAT====");
+         System.out.println("====LIST PEMBELIAN OBBAT====");
          System.out.println("Nama Obat   : "+NamaObat);
          System.out.println("Jumlah       : "+jumlah);
          System.out.println("Total Harga  : "+total);    
