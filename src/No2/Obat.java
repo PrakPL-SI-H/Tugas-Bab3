@@ -7,6 +7,7 @@ public class Obat {
     private String obatpilih[] = new String[4];
     private int banyakobat[] = new int[4];
     private int totharga;
+    private int temp;
     static private int jumobat;
 
     public void showDaftar() {
@@ -22,7 +23,9 @@ public class Obat {
             if (kode.equalsIgnoreCase(daftarobat[i][1])) {
                 obatpilih[i] = daftarobat[i][0];
                 this.banyakobat[i] = banyakobat;
+                temp = totharga;
                 totharga = banyakobat * hargaobat[i];
+                totharga += temp;
             }
         }
         jumobat++;
