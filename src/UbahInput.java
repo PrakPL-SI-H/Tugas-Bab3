@@ -67,6 +67,10 @@ public class UbahInput {
                     angka[i] = "0";
                 }
             }
+            if (huruf[i].equalsIgnoreCase("belas") && huruf.length == 2) {
+                angka[1] = angka[0];
+                angka[0] = "1";
+            }
         }
         if (huruf.length == 1) {
             angka = new String[1];
